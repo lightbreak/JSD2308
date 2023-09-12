@@ -16,10 +16,9 @@ public class AnnoInerClass {
         class Aoo implements Inter{ @Override public void eat() {}}
         Aoo a=new Aoo();
         a.eat();
-
-
     }
 }
+
 
 interface Inter{
     void eat();

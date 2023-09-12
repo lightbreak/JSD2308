@@ -1,7 +1,7 @@
 package OODay03;
 /** 动物 */
 public abstract class Animal {
-    String name;
+    public String name;
     int age;
     String color;
     Animal(){
@@ -12,10 +12,10 @@ public abstract class Animal {
         this.color = color;
     }
 
-    void drink(){
+    public void drink(){
         System.out.println(color+"色的"+age+"岁的"+name+"正在喝水...");
     }
-    abstract void eat();
+    public abstract void eat();
 }
 
 
