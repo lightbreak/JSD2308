@@ -6,7 +6,7 @@ public class Test {
         //向下转型/强制类型转换
         //引用所指向的对象
         //
-       /*
+
         Animal a=new Dog("2", 1,"2");//能强转Dog型,Animal型,Swim型,也就是Dog的父类,接口,和本
         Dog d=(Dog)a;//引用a所指的对象,实现了Dog类型
         Swim s=(Swim)a;//引用a所指的对象,实现了Swim接口
@@ -15,7 +15,7 @@ public class Test {
         //Fish f=(Fish)a;会报错  ClassCastException类型转换异常 也就是转不了
         System.out.println(a instanceof  Fish);//判断是否能进行强制类型转换
         System.out.println(a instanceof  Animal);
-        */
+
 
 
 
@@ -59,7 +59,7 @@ public class Test {
 
 
 //演示向上造型的第二种用法
-        /*
+
         Master master=new Master();
         Dog dog=new Dog("白狗",2,"白");
         Chick chick=new Chick("花鸡",2,"花");
@@ -68,7 +68,6 @@ public class Test {
         master.feed(chick);
         master.feed(fish);
 
-         */
 
     }
 }

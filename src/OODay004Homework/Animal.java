@@ -29,6 +29,10 @@ interface Swim{
     void swim();
 }
 class Dog extends Animal implements Swim{
+    Dog(){}
+    Dog(String name,int age,String color){
+        super(name, age, color);
+    }
     @Override
     void eat() {
         System.out.println(name+age+color+"在吃小鸡");
@@ -43,6 +47,10 @@ class Dog extends Animal implements Swim{
     }
 }
 class Chink extends Animal{
+    Chink(){}
+    Chink(String name,int age,String color){
+        super(name, age, color);
+    }
     @Override
     void eat() {
         System.out.println(name+age+color+"在吃小鱼");
@@ -52,6 +60,8 @@ class Chink extends Animal{
     };
 }
 class Fish extends Animal implements Swim{
+    Fish(){}
+    Fish(String name,int age,String color){super(name, age, color);}
     @Override
     void eat() {
         System.out.println(name+"在吃鸡蛋");
@@ -64,7 +74,10 @@ class Fish extends Animal implements Swim{
     }
 }
 class Master {
-    void feed(){
-
+    public static void main(String[] args) {
+        System.out.println();
+    }
+    void feed(Animal animal){
+        animal.eat();
     }
 }
